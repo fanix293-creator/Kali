@@ -1,0 +1,12 @@
+whois nmap.org
+TARGET="scanme.nmap.org" DOMAIN="nmap.org"
+
+echo "=== Whois Lookup ===" whois $DOMAIN
+
+echo "=== Host Discovery (Ping Scan) == nmap -sn $TARGET
+
+echo "=== Port Scan with Service/Versic nmap -SV-sCp 1-1000 $TARGET
+
+echo "=== Operating System Detection == sudo nmap -0 $TARGET
+
+echo "=== Traceroute to Target ===" traceroute $TARGET
